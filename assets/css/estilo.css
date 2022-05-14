@@ -3,6 +3,7 @@
     font-family: 'Roboto light', sans-serif;
     margin: 0 0 0 0;
     z-index: 1000;
+    position: absolute;
 }
 
 #button.navbar-toggler{
@@ -12,15 +13,17 @@
 .navbar-toggler-icon{
     color: #FFFFFF!important; 
     border-color:#FFFFFF7F;
+
 }
 
 #menunav{
     margin-left: 70%;
+
 }
 
 #menunav >li >a{color: #FFFFFF; font-family: 'Roboto light', sans-serif; font-size: 14pt;}
-#menunav >li >a:hover{text-decoration:underline;}
-
+#menunav >li >a:hover{text-decoration:underline; 
+}
 
 /*--carousel-*/
 #carousel{
@@ -148,4 +151,8 @@ footer{
 
 i{
 color: #FFFFFF;
+}
+
+@media (max-width:2000px) {
+    #menunav.hide {transform: translateX(200000px);}
 }
